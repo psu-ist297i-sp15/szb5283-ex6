@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :topics
-  root 'topics#index'
+  
+  
   
   resources :topics do
     member do
@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       post 'downvote'
     end
   end
+
+  root 'topics#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
